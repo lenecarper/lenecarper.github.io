@@ -32,3 +32,59 @@ nav
     color: #fff;
     padding: 30px;
 }
+
+#project1img
+{
+    display: flex;
+    height: 500px;
+    width: 100%;
+}
+
+#project2img
+{
+    display: flex;
+    height: 500px;
+    width: 100%;
+}
+
+#project3p1img
+{
+    display: flex;
+    height: 500px;
+    width: 100%;
+}
+
+#project3p2img
+{
+    display: flex;
+    height: 500px;
+    width: 100%;
+}
+
+#project1main
+{
+    position: relative;
+    bottom: 550px;
+    margin: 15px;
+}
+
+#project2main
+{
+    position: relative;
+    bottom: 550px;
+    margin: 15px;
+}
+
+#project3p1main
+{
+    position: relative;
+    bottom: 550px;
+    margin: 15px;
+}
+
+#project3p2main
+{
+    position: relative;
+    bottom: 550px;
+    margin: 15px;
+}
