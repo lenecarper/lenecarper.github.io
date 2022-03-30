@@ -1,1 +1,1 @@
-# test
+This website is for my older projects, and will be updated regularly when I finish newer ones.
