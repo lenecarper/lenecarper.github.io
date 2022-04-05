@@ -91,9 +91,9 @@ nav
 
 body
 {
-    background-image: url(../img/cubeloop.gif);
+    /* background-image: url(../img/cubeloop.gif);
     background-size: 100vh;
-    background-repeat: repeat;
+    background-repeat: repeat; */
     color: white;
     font-family: 'Roboto Mono', monospace;
 }
