@@ -96,10 +96,19 @@ body
     background-repeat: repeat; */
     color: white;
     font-family: 'Roboto Mono', monospace;
+    background-image: linear-gradient(purple, black);
 }
 
-@font-face
+#homeWelcome
 {
-    font-family: customFont1;
-    src: url()
+    position: relative;
+    text-align: center;
+    bottom: 60vh;
+}
+
+#homeInfo
+{
+    position: relative;
+    text-align: center;
+    bottom: 50vh;
 }
