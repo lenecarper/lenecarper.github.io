@@ -64,27 +64,34 @@ nav
 #project1main
 {
     position: relative;
-    bottom: 550px;
+    bottom: 90vh;
     margin: 15px;
 }
 
 #project2main
 {
     position: relative;
-    bottom: 550px;
+    bottom: 90vh;
     margin: 15px;
 }
 
 #project3p1main
 {
     position: relative;
-    bottom: 550px;
+    bottom: 90vh;
     margin: 15px;
 }
 
 #project3p2main
 {
     position: relative;
-    bottom: 550px;
+    bottom: 75vh;
     margin: 15px;
+}
+
+body
+{
+    background-image: url(../img/cubeloop.gif);
+    background-size: 100vh;
+    background-repeat: repeat;
 }
