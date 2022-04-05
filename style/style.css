@@ -94,4 +94,12 @@ body
     background-image: url(../img/cubeloop.gif);
     background-size: 100vh;
     background-repeat: repeat;
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+}
+
+@font-face
+{
+    font-family: customFont1;
+    src: url()
 }
