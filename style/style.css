@@ -4,82 +4,181 @@
     padding: 0;
     margin: 0;
 }
-
+/* Sets the list styles to none, displays as a block and slows the transition for a fade-in effect on hover */
   nav ul li
 {
     list-style-type: none;
     display: inline-block;
     transition: 0.7s all;
 }
-
+/* Sets the background color of the hovered button to purple */
   nav ul li:hover
 {
     background-color:rgb(107, 18, 111);
 }
-
+/* Settings for the first project page */
 #project1img
 {
     display: flex;
     height: 500px;
     width: 100%;
 }
-
+/* Settings for the second project page */
 #project2img
 {
     display: flex;
     height: 500px;
     width: 100%;
 }
-
+/* Settings for the third project page */
 #project3p1img
 {
     display: flex;
     height: 500px;
     width: 100%;
 }
-
+/* Settings for the third project page */
 #project3p2img
 {
     display: flex;
     height: 500px;
     width: 100%;
 }
-
+/* Settings for the third project page */
 #project3p1main
 {
     position: relative;
     bottom: 90vh;
     margin: 15px;
 }
-
+/* Settings for the third project page */
 #project3p2main
 {
     position: relative;
     bottom: 75vh;
     margin: 15px;
 }
-
+/* Sets the standard background for the website and the font to a custom 'Roboto Mono' */
 body
 {
-    /* background-image: url(../img/cubeloop.gif);
-    background-size: 100vh;
-    background-repeat: repeat; */
     color: white;
     font-family: 'Roboto Mono', monospace;
     background-image: linear-gradient(purple, red);
     height: 100vh;
 }
-
+/* Text from the homepage */
 #homeWelcome
 {
     position: relative;
     text-align: center;
     top: 20vh;
 }
-
+/* Text from the homepage */
 #homeInfo
 {
     position: relative;
     text-align: center;
     top: 30vh;
+}
+/* The div used in the about page, with a rainbow animation included */
+#textBlockAbout
+{
+    width: 500px;
+    height: 500px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    left: 30%;
+    top: 15%;
+    background-image: linear-gradient();
+    animation: rainbow 7.5s infinite;
+}
+/* Text for the about page  */
+#about1
+{
+    color: black;
+    font-size: 20px;
+    position: relative;
+    top: 30%;
+    text-align: center;
+    font-weight: bold;
+}
+/* Text for the about page */
+#about2
+{
+    color: black;
+    font-size: 16px;
+    position: relative;
+    top: 35%;
+    text-align: center;
+    font-weight: bold;
+}
+/* if the screen gets below 600px, the div shrinks */
+@media only screen and (max-width: 600px)
+{
+    #textBlockAbout
+    {
+        
+    }
+}
+
+/* Create a spinning keyframe animation */
+@keyframes spin
+{
+    100%
+    {
+        transform: RotateZ(360deg);
+    }
+}
+/* Creates a rainbow effect by cycling through colors at percentages */
+@keyframes rainbow
+{
+    100%,0%
+    {
+        background-color: rgb(255,0,0);
+    }
+    8%
+    {
+        background-color: rgb(255,127,0);
+    }
+    16%
+    {
+        background-color: rgb(255,255,0);
+    }
+    25%
+    {
+        background-color: rgb(127,255,0);
+    }
+    33%
+    {
+        background-color: rgb(0,255,0);
+    }
+    41%
+    {
+        background-color: rgb(0,255,127);
+    }
+    50%
+    {
+        background-color: rgb(0,255,255);
+    }
+    58%
+    {
+        background-color: rgb(0,127,255);
+    }
+    66%
+    {
+        background-color: rgb(0,0,255);
+    }
+    75%
+    {
+        background-color: rgb(127,0,255);
+    }
+    83%
+    {
+        background-color: rgb(255,0,255);
+    }
+    91%
+    {
+        background-color: rgb(255,0,127);
+    }
 }
