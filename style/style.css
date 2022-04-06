@@ -92,6 +92,7 @@ body
     top: 15%;
     background-image: linear-gradient();
     animation: rainbow 7.5s infinite;
+    z-index: -1;
 }
 /* Text for the about page  */
 #about1
@@ -118,7 +119,14 @@ body
 {
     #textBlockAbout
     {
-        
+        border-radius: 0;
+        width: 50%;
+        height: 75vh;
+        z-index: -1;
+    }
+    #about1, #about2
+    {
+        font-size: 15px;
     }
 }
 
