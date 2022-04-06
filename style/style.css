@@ -144,6 +144,32 @@ body
     text-decoration: none;
 }
 
+#socialsh1
+{
+    text-align: center;
+}
+
+#contactGmail
+{
+    width: 150px;
+    height: 150px;
+    display: block;
+}
+
+#contactWhatsapp
+{
+    width: 150px;
+    height: 150px;
+    display: block;
+}
+
+#contactInstagram
+{
+    width: 150px;
+    height: 150px;
+    display: block;
+}
+
 /* if the screen gets below 600px, the div shrinks */
 @media only screen and (max-width: 600px)
 {
@@ -153,6 +179,8 @@ body
         width: 300px;
         height: 75vh;
         z-index: -1;
+        position: relative;
+        right: 300px;
     }
     #about1, #about2
     {
@@ -166,7 +194,7 @@ body
     #project1img, #project2img, #project3p1img, #project3p2img
     {
         position: relative;
-        left: 10%;
+        left: 0%;
         height: 400px;
         width: 400px;
     }
@@ -177,7 +205,7 @@ body
     #contactBtn
     {
         position: relative;
-        right: 200px;
+        left: 23%;
     }
 }
 
