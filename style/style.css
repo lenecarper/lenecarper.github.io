@@ -177,6 +177,11 @@ body
     text-align: center;
 }
 
+#logsDiv
+{
+    text-align: center;
+}
+
 /* if the screen gets below 600px, these changes apply */
 @media only screen and (max-width: 600px)
 {
@@ -214,6 +219,10 @@ body
     {
         position: relative;
         left: 10%;
+    }
+    #logSpan
+    {
+        font-size: small;
     }
 }
 
