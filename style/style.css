@@ -170,6 +170,8 @@ body
     display: block;
 }
 
+
+
 /* if the screen gets below 600px, the div shrinks */
 @media only screen and (max-width: 600px)
 {
@@ -197,7 +199,7 @@ body
         position: relative;
         left: 0%;
         height: 400px;
-        width: 400px;
+        width: 100%;
     }
     #project1main, #project2main, #project3p1main, #project3p2main
     {
