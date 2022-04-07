@@ -170,6 +170,13 @@ body
     display: block;
 }
 
+#logSpan
+{
+    color: black;
+    font-size: large;
+    text-align: center;
+}
+
 /* if the screen gets below 600px, these changes apply */
 @media only screen and (max-width: 600px)
 {
