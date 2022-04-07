@@ -164,14 +164,14 @@ body
     height: 150px;
     display: block;
 }
-
+/* logs page text customization */
 #logSpan
 {
     color: black;
     font-size: large;
     text-align: center;
 }
-
+/* the div for the logs page, this is mainly for centering the text to the middle of the page */
 #logsDiv
 {
     text-align: center;
@@ -281,7 +281,7 @@ body
         background-color: rgb(255,0,127);
     }
 }
-
+/* rainbow animation made for the contact button on hover */
 @keyframes rainbowcontact
 {
     100%,0%
