@@ -78,7 +78,14 @@ body
 {
     position: relative;
     text-align: center;
-    top: 30vh;
+    top: 22vh;
+}
+
+#getInContact
+{
+    position: relative;
+    text-align: center;
+    top: 28vh;
 }
 /* The div used in the about page, with a rainbow animation included */
 #textBlockAbout
