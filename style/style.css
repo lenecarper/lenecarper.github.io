@@ -154,16 +154,11 @@ body
     width: 150px;
     height: 150px;
     display: block;
+    margin-top: 50px;
+    margin-bottom: 75px;
 }
 /* the images for the hyperlinks on the contact page */
 #contactWhatsapp
-{
-    width: 150px;
-    height: 150px;
-    display: block;
-}
-/* the images for the hyperlinks on the contact page */
-#contactInstagram
 {
     width: 150px;
     height: 150px;
