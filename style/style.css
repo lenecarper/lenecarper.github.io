@@ -158,20 +158,24 @@ body
 /* the images for the hyperlinks on the contact page */
 #contactGmail
 {
+    position: absolute;
     width: 75px;
     height: 75px;
     display: block;
     margin-top: 100px;
     margin-bottom: 75px;
     margin-left: 75px;
+    top: 25vh;
 }
 /* the images for the hyperlinks on the contact page */
 #contactWhatsapp
 {
+    position: absolute;
     width: 75px;
     height: 75px;
     display: block;
     margin-left: 75px;
+    top: 65vh;
 }
 
 #gmailh1
@@ -249,6 +253,10 @@ body
     #logSpan
     {
         font-size: small;
+    }
+    #gmailh1, #whatsapph1
+    {
+        margin-top: 20px;
     }
 }
 
