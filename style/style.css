@@ -121,7 +121,7 @@ body
     height: 100px;
     border-radius: 15px;
     position: relative;
-    left: 39%;
+    left: 38%;
     top: 200px;
     background-color: black;
 }
@@ -181,7 +181,7 @@ body
         z-index: -1;
         position: relative;
         right: 350px;
-        left: 150px;
+        left: 100px;
     }
     #about1, #about2
     {
@@ -206,7 +206,7 @@ body
     #contactBtn
     {
         position: relative;
-        left: 12%;
+        left: 10%;
     }
 }
 
