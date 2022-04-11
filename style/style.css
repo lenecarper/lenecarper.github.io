@@ -4,6 +4,7 @@
     padding: 0;
     margin: 0;
 }
+
 /* Sets the list styles to none, displays as a block and slows the transition for a fade-in effect on hover */
   nav ul li
 {
@@ -11,14 +12,14 @@
     display: inline-block;
     transition: 0.7s all;
 }
+
 /* Sets the background color of the hovered button to purple */
   nav ul li:hover
 {
     background-color:rgb(107, 18, 111);
 }
-/* Settings for the first project page */
 
-/* settings for laptop screens */
+/* settings for laptop screens and laptop screens*/
 @media only screen and (max-width: 1600px)
 {
 #project1img
@@ -27,6 +28,7 @@
     height: 500px;
     width: 100%;
 }
+
 /* Settings for the second project page */
 #project2img
 {
@@ -34,6 +36,7 @@
     height: 500px;
     width: 100%;
 }
+
 /* Settings for the third project page */
 #project3p1img
 {
@@ -41,6 +44,7 @@
     height: 500px;
     width: 100%;
 }
+
 /* Settings for the third project page */
 #project3p2img
 {
@@ -48,6 +52,7 @@
     height: 500px;
     width: 100%;
 }
+
 /* Settings for the third project page */
 #project3p1main
 {
@@ -55,6 +60,7 @@
     bottom: 90vh;
     margin: 15px;
 }
+
 /* Settings for the third project page */
 #project3p2main
 {
@@ -62,6 +68,7 @@
     bottom: 75vh;
     margin: 15px;
 }
+
 /* Sets the standard background for the website and the font to a custom 'Roboto Mono' */
 body
 {
@@ -70,6 +77,7 @@ body
     background-image: linear-gradient(purple, red);
     height: 100vh;
 }
+
 /* Text from the homepage */
 #homeWelcome
 {
@@ -77,6 +85,7 @@ body
     text-align: center;
     top: 20vh;
 }
+
 /* Text from the homepage */
 #homeInfo
 {
@@ -91,6 +100,7 @@ body
     text-align: center;
     top: 28vh;
 }
+
 /* The div used in the about page, with a rainbow animation included */
 #textBlockAbout
 {
@@ -105,6 +115,7 @@ body
     animation: rainbow 7.5s infinite;
     z-index: -1;
 }
+
 /* Text for the about page  */
 #about1
 {
@@ -115,6 +126,7 @@ body
     text-align: center;
     font-weight: bold;
 }
+
 /* Text for the about page */
 #about2
 {
@@ -125,6 +137,7 @@ body
     text-align: center;
     font-weight: bold;
 }
+
 /* settings for the contact button on the homepage */
 #contactBtn
 {
@@ -136,11 +149,13 @@ body
     top: 200px;
     background-color: black;
 }
+
 /* displays a rainbow animation when you hover over the homepage contact button */
 #contactBtn:hover
 {
     animation: rainbowcontact 5s linear infinite;
 }
+
 /* settings for the contact button text */
 #contacth1
 {
@@ -149,16 +164,19 @@ body
     position: relative;
     top: 20px;
 }
+
 /* the hyperlink for the contact button */
 #contactAnchor
 {
     text-decoration: none;
 }
+
 /* the settings for the social media page text */
 #socialsh1
 {
     text-align: center;
 }
+
 /* the images for the hyperlinks on the contact page */
 #contactGmail
 {
@@ -171,6 +189,7 @@ body
     margin-left: 75px;
     top: 25vh;
 }
+
 /* the images for the hyperlinks on the contact page */
 #contactWhatsapp
 {
@@ -203,6 +222,7 @@ body
 {
     text-align: center;
 }
+
 /* logs page text customization */
 #logSpan
 {
@@ -210,6 +230,7 @@ body
     font-size: large;
     text-align: center;
 }
+
 /* the div for the logs page, this is mainly for centering the text to the middle of the page */
 #logsDiv
 {
@@ -280,6 +301,7 @@ body
         transform: RotateZ(360deg);
     }
 }
+
 /* Creates a rainbow effect by cycling through colors at percentages */
 @keyframes rainbow
 {
@@ -332,6 +354,7 @@ body
         background-color: rgb(255,0,127);
     }
 }
+
 /* rainbow animation made for the contact button on hover */
 @keyframes rainbowcontact
 {
