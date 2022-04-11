@@ -17,6 +17,10 @@
     background-color:rgb(107, 18, 111);
 }
 /* Settings for the first project page */
+
+/* settings for laptop screens */
+@media only screen and (max-width: 1600px)
+{
 #project1img
 {
     display: flex;
@@ -212,6 +216,8 @@ body
     text-align: center;
 }
 
+}
+
 /* if the screen gets below 600px, these changes apply */
 @media only screen and (max-width: 600px)
 {
@@ -258,6 +264,12 @@ body
     {
         margin-top: 20px;
     }
+}
+
+/* fix for computer screens */
+@media only screen and (min-width: 1920px)
+{
+
 }
 
 /* Create a spinning keyframe animation */
