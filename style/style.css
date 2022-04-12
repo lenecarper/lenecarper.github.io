@@ -290,7 +290,284 @@ body
 /* fix for computer screens */
 @media only screen and (min-width: 1920px)
 {
-
+   /* Sets the list styles to none, displays as a block and slows the transition for a fade-in effect on hover */
+  nav ul li
+  {
+      list-style-type: none;
+      display: inline-block;
+      transition: 0.7s all;
+  }
+  
+  /* Sets the background color of the hovered button to purple */
+    nav ul li:hover
+  {
+      background-color:rgb(107, 18, 111);
+  }
+  
+  /* settings for laptop screens and laptop screens*/
+  #project1img
+  {
+      display: flex;
+      height: 500px;
+      width: 100%;
+  }
+  
+  /* Settings for the second project page */
+  #project2img
+  {
+      display: flex;
+      height: 500px;
+      width: 100%;
+  }
+  
+  /* Settings for the third project page */
+  #project3p1img
+  {
+      display: flex;
+      height: 500px;
+      width: 100%;
+  }
+  
+  /* Settings for the third project page */
+  #project3p2img
+  {
+      display: flex;
+      height: 500px;
+      width: 100%;
+  }
+  
+  /* Settings for the third project page */
+  #project3p1main
+  {
+      position: relative;
+      bottom: 90vh;
+      margin: 15px;
+  }
+  
+  /* Settings for the third project page */
+  #project3p2main
+  {
+      position: relative;
+      bottom: 75vh;
+      margin: 15px;
+  }
+  
+  /* Sets the standard background for the website and the font to a custom 'Roboto Mono' */
+  body
+  {
+      color: white;
+      font-family: 'Roboto Mono', monospace;
+      background-image: linear-gradient(purple, red);
+      height: 100vh;
+  }
+  
+  /* Text from the homepage */
+  #homeWelcome
+  {
+      position: relative;
+      text-align: center;
+      top: 20vh;
+  }
+  
+  /* Text from the homepage */
+  #homeInfo
+  {
+      position: relative;
+      text-align: center;
+      top: 22vh;
+  }
+  
+  #getInContact
+  {
+      position: relative;
+      text-align: center;
+      top: 28vh;
+  }
+  
+  /* The div used in the about page, with a rainbow animation included */
+  #textBlockAbout
+  {
+      width: 500px;
+      height: 500px;
+      background-color: black;
+      border-radius: 50%;
+      position: absolute;
+      left: 50%;
+      top: 15%;
+      background-image: linear-gradient();
+      animation: rainbow 7.5s infinite;
+      z-index: -1;
+  }
+  
+  /* Text for the about page  */
+  #about1
+  {
+      color: black;
+      font-size: 20px;
+      position: relative;
+      top: 30%;
+      text-align: center;
+      font-weight: bold;
+  }
+  
+  /* Text for the about page */
+  #about2
+  {
+      color: black;
+      font-size: 16px;
+      position: relative;
+      top: 35%;
+      text-align: center;
+      font-weight: bold;
+  }
+  
+  /* settings for the contact button on the homepage */
+  #contactBtn
+  {
+      width: 300px;
+      height: 100px;
+      border-radius: 15px;
+      position: relative;
+      left: 50%;
+      top: 70%;
+      background-color: black;
+  }
+  
+  /* displays a rainbow animation when you hover over the homepage contact button */
+  #contactBtn:hover
+  {
+      animation: rainbowcontact 5s linear infinite;
+  }
+  
+  /* settings for the contact button text */
+  #contacth1
+  {
+      color: white;
+      text-align: center;
+      position: relative;
+      top: 5%;
+  }
+  
+  /* the hyperlink for the contact button */
+  #contactAnchor
+  {
+      text-decoration: none;
+  }
+  
+  /* the settings for the social media page text */
+  #socialsh1
+  {
+      text-align: center;
+  }
+  
+  /* the images for the hyperlinks on the contact page */
+  #contactGmail
+  {
+      position: absolute;
+      width: 75px;
+      height: 75px;
+      display: block;
+      margin-top: 100px;
+      margin-bottom: 75px;
+      margin-left: 75px;
+      top: 25vh;
+  }
+  
+  /* the images for the hyperlinks on the contact page */
+  #contactWhatsapp
+  {
+      position: absolute;
+      width: 75px;
+      height: 75px;
+      display: block;
+      margin-left: 75px;
+      top: 65vh;
+  }
+  
+  #gmailh1
+  {
+      position: absolute;
+      bottom: 40vh;
+      left: 75px;
+      font-size: larger;
+  }
+  
+  #whatsapph1
+  {
+      position: absolute;
+      bottom: 15vh;
+      left: 75px;
+      font-size: larger;
+      color: black;
+  }
+  
+  #socialsh2
+  {
+      text-align: center;
+  }
+  
+  /* logs page text customization */
+  #logSpan
+  {
+      color: black;
+      font-size: large;
+      text-align: center;
+  }
+  
+  /* the div for the logs page, this is mainly for centering the text to the middle of the page */
+  #logsDiv
+  {
+      text-align: center;
+  }
+  
+  }
+  
+  /* if the screen gets below 600px, these changes apply */
+  @media only screen and (max-width: 600px)
+  {
+      #textBlockAbout
+      {
+          border-radius: 15px;
+          width: 300px;
+          height: 75vh;
+          z-index: -1;
+          position: relative;
+          right: 350px;
+          left: 25px;
+      }
+      #about1, #about2
+      {
+          font-size: 15px;
+      }
+      #homeWelcome, #homeInfo
+      {
+          text-align: center;
+          font-size: 15px;
+      }
+      #project1img, #project2img, #project3p1img, #project3p2img
+      {
+          position: relative;
+          left: 0%;
+          height: 400px;
+          width: 100%;
+      }
+      #project1main, #project2main, #project3p1main, #project3p2main
+      {
+          text-align: center;
+      }
+      #contactBtn
+      {
+          position: relative;
+          left: 10%;
+      }
+      #logSpan
+      {
+          font-size: small;
+      }
+      #gmailh1, #whatsapph1
+      {
+          margin-top: 20px;
+      } 
 }
 
 /* Create a spinning keyframe animation */
