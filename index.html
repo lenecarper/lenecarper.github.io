@@ -1,60 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/style.css" />
-    <title>My projects</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> 
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style/style.css" />
+  <script src="https://kit.fontawesome.com/5b2c48bb3f.js" crossorigin="anonymous"></script>
 </head>
-<body id="indexbody">
-    <!-- Responsive navbar code, modified in style.css -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="index.html">Milan van Houts</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="pages/about.html">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="pages/contact.html">Contact</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="pages/logs.html">Logs</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Projects
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="pages/project1.html">Project 1</a></li>
-                  <li><a class="dropdown-item" href="pages/project2.html">Project 2</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="pages/project3.html">Project 3</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-              </li>
-            </ul>
+<body>
+<header id="header">
+<div class="title">
+  <div>
+    <span class="typcn typcn-heart-outline icon heading"></span>
+  </div>
+  <div class="smallsep heading"></div>
+  <h1 class="heading" id="type-smooth"></h1>
+  <h2 class="heading">Student at ROC Ter AA 2021-2024</h2>
+  <a class="smoothscroll" href="#about">
+    <div class="mouse">
+      <div class="wheel"></div>
+    </div>
+  </a>
+</div>
+<a class="smoothscroll" href="#about"><div class="scroll-down"></div></a>
+</header>
+
+
+<section id="about">
+  <div class="container">
+    <div class="row">
+      <h1>About me</h1>
+      <div class="block"></div>
+      <p style="font-size: 1.5em;">A little introduction into who I am and what motivates me.</p>
+    </div>
+    <div class="row">
+      <div class="six columns">
+        <h3><i class="typcn typcn-device-desktop icon far fa-address-card"></i>Who am I?</h3>
+        <p>My name is Milan van Houts and I live in Deurne. I am studying software development at an MBO called 'ROC Ter AA'. I've been programming for around 2 years now and have been enjoying it very much.</p>
+      </div>
+      <div class="six columns">
+        <h3><i class="typcn typcn-pen icon fa-regular fa-thumbs-up"></i>My motivations</h3>
+        <p>The thought of improving myself and becoming more proficient at programming is what motivates me to keep studying. I aspire to become a professional in this job field and will do whatever it takes to achieve that goal.</p>
+      </div>
+      <div class="row">
+        <div class="six columns">
+          <h3><i class="typcn typcn-cog-outline icon fa-solid fa-briefcase"></i>Work experience</h3>
+          <p>During my three years at this school I will have two internships. My first internship was at a company called <a href="https://rigter.com/">Rigter B.V.</a> which specializes in developing transport and logistics software. Here I worked on projects such as service integrations into their web applications and dashboards in JavaScript libraries. At the time of writing this, I am still looking for my graduation internship.</p>
+        </div>
+        <div class="six columns">
+          <h3><i class="typcn typcn-lightbulb icon fa-solid fa-code"></i>Knowledge</h3>
+          <p>I have experience in many programming languages, such as:<br>Full-Stack PHP/JavaScript webdevelopment, MySQL, C# WinForms, C++, Python, Django (HTML framework) & Linux. During my first internship at Rigter I learned a lot about networking, hardware and most importantly programming. Primarily Python, Django and Linux was used there.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="container">
+    <h1>Interests & proficiency</h1>
+    <div class="block"></div>
+    <div class="row">
+      <div class="one-third column">
+        <h3>Design (front-end)</h3>
+        <p>I'm very interested in the front-end aspect of websites and applications, although I excel more in the back-end aspect.</p>
+      </div>
+      <div class="one-third column">
+        <h3>Dev. (back-end)</h3>
+        <p>Over the years I have learned that I excel better in the back-end development of websites. I am interested in making functioning and fast web applications.</p>
+      </div>
+      <div class="one-third column">
+        <h3>Learning & improving</h3>
+        <p>Over the past two years I have improved a lot in programming, going from nothing to being able to make proper applications in a fairly short time. I know that my learning is never done and am working hard to improve myself in what I do.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="eight columns">
+        <div class="progressBar">
+          <h4>PHP</h4>
+          <div class="progressBarContainer">
+            <div class="progressBarValue value-80"></div>
           </div>
         </div>
-      </nav>
+        <div class="progressBar">
+          <h4>HTMl5 / CSS3</h4>
+          <div class="progressBarContainer">
+            <div class="progressBarValue value-70"></div>
+          </div>
+        </div>
+        <div class="progressBar">
+          <h4>JavaScript (jQuery)</h4>
+          <div class="progressBarContainer">
+            <div class="progressBarValue value-65"></div>
+          </div>
+        </div>
+        <div class="progressBar">
+          <h4>C# (WinForms .NET) / C++</h4>
+          <div class="progressBarContainer">
+            <div class="progressBarValue value-60"></div>
+          </div>
+        </div>
+        <div class="progressBar">
+          <h4>Python / Django</h4>
+          <div class="progressBarContainer">
+            <div class="progressBarValue value-50"></div>
+          </div>
+        </div>
+      </div>
+      <div class="four columns">
+        <p>The statistics on the left show my progress and proficiency in my most used programming languages. Since I am most interested in webdevelopment, it will show in the graphs.</p>
+      </div>
     </div>
-    <h1 id="homeWelcome">Welcome to my website.</h1>
-    <h2 id="homeInfo">This is a showcase of my projects.</h2>
-    <h2 id="getInContact">Get in contact with me! Click the button below.</h2>
-    <a href="pages/contact.html" id="contactAnchor"><div id="contactBtn"><h1 id="contacth1">Contact</h1></div></a>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </div>
+</section>
+
+
+<section id="portfolio">
+  <div class="container">
+    <h1>Projects</h1>
+    <div class="block"></div>
+    <div class="row">
+      <div class="three columns"><a href="#"><img src="http://placehold.it/220x220" class="image" alt="Project one"/></a><h5 class="project-undertext">filler</h5></div>
+      <div class="three columns"><a href="#"><img src="http://placehold.it/220x220" class="image" alt="Project tw"/></a><h5 class="project-undertext">filler</h5></div>
+      <div class="three columns"><a href="#"><img src="http://placehold.it/220x220" class="image" alt="Project three"/></a><h5 class="project-undertext">filler</h5></div>
+      <div class="three columns"><a href="#"><img src="http://placehold.it/220x220" class="image" alt="Project four"/></a><h5 class="project-undertext">filler</h5></div>
+    </div>
+    <div class="row" style="margin-top: 30px;">
+      <div class="three columns"><a href="#"><img src="http://placehold.it/220x220" class="image" alt="Project five"/></a><h5 class="project-undertext">filler</h5></div>
+      <div class="three columns"><a href="#"><img src="http://placehold.it/220x220" class="image" alt="Project six"/></a><h5 class="project-undertext">filler</h5></div>
+      <div class="three columns"><a href="#"><img src="http://placehold.it/220x220" class="image" alt="Project seven"/></a><h5 class="project-undertext">filler</h5></div>
+      <div class="three columns"><a href="#"><img src="http://placehold.it/220x220" class="image" alt="Project eight"/></a><h5 class="project-undertext">filler</h5></div>
+    </div>
+  </div>
+</section>
+
+<footer>filler (add contact information)</footer>
 </body>
+<script src="js/main.js"></script>
 </html>
