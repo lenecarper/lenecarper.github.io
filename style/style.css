@@ -536,7 +536,7 @@ header
 {
 	background-color: #5a5a5a;
 	width: 100%;
-	height: auto;
+	height: 215px;
 	margin-left: auto;
 	margin-right: auto;
 	transition: .5s;
@@ -687,4 +687,23 @@ pre, blockquote, dl, figure, table, p, ul, ol, form
 	background: #e55d87;
     background-image: url(http://hdqwalls.com/wallpapers/purple-gradient-4k-09.jpg);
 	margin-bottom: 50px;
+}
+
+#modal
+{
+    position: absolute;
+    width: 80%;
+    height: 75%;
+    background-color: black;
+    text-align: center;
+    margin: auto;
+}
+
+.video
+{
+    position: absolute;
+    left: 0;
+    height: 215px;
+    width: 210px;
+    z-index: -5;
 }

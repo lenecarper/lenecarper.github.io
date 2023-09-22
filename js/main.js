@@ -28,3 +28,9 @@ document.addEventListener("DOMContentLoaded", function ()
     // Start the typing effect
     typeCharacter();
 });
+
+function displayModal()
+{
+    console.log('Displaying modal..');
+    this.style.display = "none";
+}
