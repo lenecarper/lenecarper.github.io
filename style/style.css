@@ -712,3 +712,8 @@ pre, blockquote, dl, figure, table, p, ul, ol, form
     text-align: center;
     font-size: 1.2em;
 }
+
+#project-information
+{
+	text-align: center;
+}

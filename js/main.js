@@ -31,14 +31,31 @@ document.addEventListener("DOMContentLoaded", function ()
 
 function displayInfo(id)
 {
-    var projectDisplay = document.getElementById('project-information');
+    var projectInformation = document.getElementById('project-information');
+    var projectDisplay = document.getElementById('project-display')
     var caption = document.getElementById('caption');
-    let projectDescription = ["IMDBoxd: a combination between IMDb and Letterboxd. A site I created for my end-of-the-year project with a group where I did most of the back-end development. The goal of the website was to guess a random movie from the top 250 movies of all time on IMDb and to save it to your account in a collection. "];
+    let projectDescription = ["IMDBoxd: a combination between <a href='https://imdb.com'>IMDb</a> and <a href='https://letterboxd.com'>Letterboxd</a>. A site I created for my end-of-the-year project with a group where I did most of the back-end development. The goal of the website was to guess a random movie from the top 250 movies of all time on IMDb and to save it to your account in a collection. This website was created with HTML, PHP, JavaScript, MySql & Bootstrap"];
     if (id == "imdboxd")
     {
-        
+        projectDisplay.src = "img/IMDBoxd_New.mp4";
+        caption.innerHTML = projectDescription[0];
     }
-    projectDisplay.style.display = "block";
+    else if (id == "coincap")
+    {
+        projectDisplay.src = "img/CryptoMania_Temp.mp4";
+        caption.innerHTML = projectDescription[1];
+    }
+    else if (id == "survey")
+    {
+        projectDisplay.src = "img/PHP_Survey.mp4";
+        caption.innerHTML = projectDescription[2];
+    }
+    else if (id == "memorymatch")
+    {
+        projectDisplay.src = "img/Memory_Match.mp4";
+        caption.innerHTML = projectDescription[3];
+    }
+    projectInformation.style.display = "block";
     caption.style.display = "block";
     console.log('Displaying project information for ' + id + '..');
 }
