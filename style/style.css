@@ -462,9 +462,9 @@ header
 	height: 8px;
 	float: left;
 	background: #a900ff; /* Old browsers */
-	background: -moz-linear-gradient(-45deg, #a900ff 0%, #528a9d 100%);
-	background: -webkit-linear-gradient(-45deg, #a20033 0%, #5fc3e4 100%);
-	background: linear-gradient(135deg, #d90000 0%, #00a611 100%);
+	background: -moz-linear-gradient(-45deg, #f40000 0%, #00e717 100%);
+	background: -webkit-linear-gradient(-45deg, #f40000 0%, #00e717 100%);
+	background: linear-gradient(135deg, #f40000 0%, #00e717 100%);
 }
 
 .value-00
