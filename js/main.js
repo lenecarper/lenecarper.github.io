@@ -58,4 +58,5 @@ function displayInfo(id)
     projectInformation.style.display = "block";
     caption.style.display = "block";
     console.log('Displaying project information for ' + id + '..');
+    window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' })
 }
