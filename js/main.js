@@ -31,6 +31,7 @@ document.addEventListener("DOMContentLoaded", function ()
 
 function displayInfo()
 {
+    let projectInfo = ["IMDBoxd: a combination between IMDb and Letterboxd. A site I created for my end-of-the-year project with a group where I did most of the back-end development. "];
     console.log('Displaying project information..');
-    document.getElementById('project-display').style.display = "block";
+    document.getElementById('project-information').style.display = "block";
 }
