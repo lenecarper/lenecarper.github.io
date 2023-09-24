@@ -29,8 +29,8 @@ document.addEventListener("DOMContentLoaded", function ()
     typeCharacter();
 });
 
-function displayModal()
+function displayInfo()
 {
-    console.log('Displaying modal..');
-    this.style.display = "none";
+    console.log('Displaying project information..');
+    document.getElementById('project-display').style.display = "block";
 }
