@@ -42,7 +42,7 @@ function displayInfo(id)
     }
     else if (id == "coincap")
     {
-        projectDisplay.src = "img/CryptoMania_Temp.mp4";
+        projectDisplay.src = "img/CryptoMania_Full.mp4";
         caption.innerHTML = projectDescription[1];
     }
     else if (id == "survey")
