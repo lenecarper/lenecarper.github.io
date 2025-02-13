@@ -146,49 +146,133 @@
               </div>
             </div>
           </li>
-          <li class="l-section section">
+          <li class="l-section section" id="choice-thing">
             <div class="hire">
               <h2>ik heb nog een surprise voor je my love<br>(hopelijk heb je dit onderweg gezien)</h2>
               <br><h3 style="text-align: center;">did u like je cadeautje tot nu toe</h3>
-              <form class="work-request">
+              <form class="work-request" onsubmit="changeBackgroundColor(event)">
                 <div class="work-request--options">
                   <span class="options-a">
                     <input id="opt-1" type="checkbox" value="app design">
                     <label for="opt-1">
                       <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                      viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
-                      <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
-                        <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
-                      </g>
+                        viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
+                        <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
+                          <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
+                        </g>
                       </svg>
                       ja
                     </label>
                     <input id="opt-6" type="checkbox" value="marketing">
                     <label for="opt-6">
                       <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                      viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
-                      <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
-                        <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
-                      </g>
+                        viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
+                        <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
+                          <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
+                        </g>
                       </svg>
                       nee
                     </label>
                   </span>
                 </div>
-                <div class="work-request--information">
-                  <div class="information-name">
-                    <input id="name" type="text" spellcheck="false">
-                    <label for="name">Name</label>
-                  </div>
-                  <div class="information-email">
-                    <input id="email" type="email" spellcheck="false">
-                    <label for="email">Email</label>
-                  </div>
-                </div>
-                <input type="submit" value="Send Request">
+                <input type="submit" value="voltooien">
               </form>
             </div>
           </li>
+          
+          <script>
+            // change background dynamically (yes/no/null)
+            function changeBackgroundColor(event)
+            {
+              event.preventDefault();
+              
+              const opt1 = document.getElementById('opt-1').checked;
+              const opt6 = document.getElementById('opt-6').checked;
+          
+              if (opt1 && opt6)
+              {
+                document.body.style.backgroundImage = 'url("https://i.imgflip.com/9k50jn.jpg")';
+                createHeartFallEffect(false);
+                removeHearts();
+                document.body.innerHTML = '';
+              }
+              else if (opt6)
+              {
+                document.body.style.backgroundImage = 'url("https://i.imgflip.com/9k50jn.jpg")';
+                createHeartFallEffect(false);
+                removeHearts();
+                document.body.innerHTML = '';
+              }
+              else if (opt1)
+              {
+                createHeartFallEffect(true);
+              }
+              else
+              {
+                document.body.style.backgroundColor = '';
+                createHeartFallEffect(false);
+                removeHearts();
+              }
+            }
+          
+            // hearts falling
+            function createHeartFallEffect(isYes)
+            {
+              const images =
+              [
+                  'url("assets/img/heart1.png")',
+                  'url("assets/img/heart2.png")',
+                  'url("assets/img/heart3.png")',
+                  'url("assets/img/heart4.png")'
+              ];
+              if (isYes)
+              {
+                for (let i = 0; i < 50; i++)
+                {
+                  const heart = document.createElement('div');
+                  heart.classList.add('falling-heart');
+                  document.body.appendChild(heart);
+
+                  const randomImage = images[Math.floor(Math.random() * images.length)];
+                  heart.style.backgroundImage = randomImage;
+          
+                  heart.style.left = Math.random() * screen.width + 'px';
+                  heart.style.animationDelay = Math.random() * 5 + 's';
+                }
+              }
+            }
+
+            // remove da hearts
+            function removeHearts()
+            {
+                const hearts = document.querySelectorAll('.falling-heart');
+                hearts.forEach(heart => heart.remove());
+            }
+          </script>
+          
+          <style>
+            .falling-heart
+            {
+              position: absolute;
+              top: -50px;
+              font-size: 30px;
+              color: red;
+              animation: fall 5s linear infinite;
+              width: 120px;
+              height: 120px;
+              background-color: transparent;
+              background-size: cover;
+            }
+          
+            @keyframes fall
+            {
+              to
+              {
+                transform: translateY(100vh);
+                opacity: 0;
+              }
+            }
+          </style>                 
         </ul>
       </div>
     </div>
